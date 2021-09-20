@@ -129,9 +129,9 @@ r9             0x0      0
    0x0000000000400f35 <+41>:    add    $0x4,%rbx
    0x0000000000400f39 <+45>:    cmp    %rbp,%rbx
    
-Looking at <+30>, we see we are essentially doubling whatever was in %eax before when %eax = 2, it changed to 4. So basically we 
-can say that the %eax value keep on doubling so therefor we know the digit input must be 6 so we can conclude that the digit 
-(solution for phase_2) is "1 2 4 8 16 32" 
+When we look at +30>, we can see that we are essentially doubling whatever was in %eax earlier when it was 2.
+So, since the  %eax value keeps doubling, we know the digit input must be 6, 
+which leads us to the conclusion that the digit (solution for phase 2) is "1 2 4 8 16 32." 
 
 
 //Solution:
