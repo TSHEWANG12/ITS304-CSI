@@ -11,11 +11,11 @@ hi
 Breakpoint 1, 0x0000000000400e8d in phase_1 ()
 (gdb) disas
 Dump of assembler code for function phase_1:
-=> 0x0000000000400e8d <+0>:	sub    $0x8,%rsp
-   0x0000000000400e91 <+4>:	mov    $0x4023cc,%esi
-   0x0000000000400e96 <+9>:	callq  0x401339 <strings_not_equal>
+=> 0x0000000000400e8d <+0>:	sub    $0x8,%rsp                                    //building stack frame with 8 more bytes
+   0x0000000000400e91 <+4>:	mov    $0x4023cc,%esi                              //what is this being moved?
+   0x0000000000400e96 <+9>:	callq  0x401339 <strings_not_equal>                //compare the string input that we have given
    0x0000000000400e9b <+14>:	test   %eax,%eax
-   0x0000000000400e9d <+16>:	je     0x400ea4 <phase_1+23>
+   0x0000000000400e9d <+16>:	je     0x400ea4 <phase_1+23>                       //if input given is not equal bomb will explode.
    0x0000000000400e9f <+18>:	callq  0x401438 <explode_bomb>
    0x0000000000400ea4 <+23>:	add    $0x8,%rsp
    0x0000000000400ea8 <+27>:	retq   
