@@ -1,6 +1,6 @@
 That's number 2.  Keep going!
-Halfway there!
-try
+Halfway there!    
+try      // firstly i have just use input as try before checking the fuction of phase_4
 
 Breakpoint 1, 0x000000000040100e in phase_4 ()
 (gdb) disas
@@ -34,7 +34,7 @@ Dump of assembler code for function phase_4:
    0x000000000040107a <+108>:   retq
 End of assembler dump.
 (gdb) x/s 0x4025b7
-0x4025b7:       "%d %d"
+0x4025b7:       "%d %d"          //from this we came to know that this accepting two intergers so that i tired with 1 and 2
 (gdb) r ans.txt
 The program being debugged has been started already.
 Start it from the beginning? (y or n) y
