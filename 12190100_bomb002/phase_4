@@ -146,7 +146,7 @@ rdx            0x7ffffffee220      140737488282144
 rsi            0x0                 0
 rdi            0x7ffffffedbd0      140737488280528
 rbp            0x0                 0x0
-rsp            0x7ffffffee220      0x7ffffffee220   // reads a 	USER INPUT FROM REVERSE ORDER: x/d 0x7fffffffe3a0 = 2 and x/2d0x7fffffffe3a0 = 1,
+rsp            0x7ffffffee220      0x7ffffffee220   // reads a user input in reverse order : x/d  0x7ffffffee220 = 2 and x/2d 0x7ffffffee220 = 1,
 r8             0xffffffff          4294967295
 r9             0x0                 0
 r10            0x7fffff74eac0      140737479240384
